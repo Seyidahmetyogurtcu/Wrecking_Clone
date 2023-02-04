@@ -7,6 +7,8 @@ TagManager:
   - Arena
   - AI
   - Enemy
+  - Water
+  - Ball
   layers:
   - Default
   - TransparentFX
@@ -14,9 +16,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Arena
+  - Vehicle
   - 
   - 
   - 

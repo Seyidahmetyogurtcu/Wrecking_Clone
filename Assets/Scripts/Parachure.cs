@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Wrecking_Clone.GamePlay
@@ -31,8 +29,7 @@ namespace Wrecking_Clone.GamePlay
             if (other.CompareTag(Player))
             {
                 Destroy(transform.gameObject);
-                //other.GetComponent<Player>().BoxCollect();
-                Debug.Log("Collected");
+                other.GetComponent<Collector>().BoxCollect();
             }
             else if (other.CompareTag(Arena) && transform.childCount == 1)
             {
